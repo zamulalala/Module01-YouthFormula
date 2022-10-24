@@ -64,9 +64,6 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1.1fr;
 	gap: 50px;
-	--light: 80;
-  /* Пороговое значение, отделяющее "светлые" цвета, от "темных". Рекомендуется 50 - 70 */
-  --threshold: 60;
 }
 
 .intro__left {
