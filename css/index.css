@@ -64,6 +64,9 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1.1fr;
 	gap: 50px;
+	--light: 80;
+  /* Пороговое значение, отделяющее "светлые" цвета, от "темных". Рекомендуется 50 - 70 */
+  --threshold: 60;
 }
 
 .intro__left {
@@ -506,11 +509,24 @@ img {
 
 /* .form-contacts */
 
+
+@media (max-width: 1700px) {
+	.section-intro-flower_01 {
+		opacity: 0.7;
+	}
+}
+
 @media (max-width: 1600px) {
 	.section-intro-flower_02 {
 		width: 350px;
 		-webkit-filter: blur(8px);
 		        filter: blur(8px);
+	}
+}
+
+@media (max-width: 1500px) {
+	.section-intro-flower_01 {
+		display: none;
 	}
 }
 
@@ -529,10 +545,6 @@ img {
 		right: 0;
 		left: auto;
 		transform: none;
-	}
-
-	.section-intro-flower_01 {
-		display: none;
 	}
 }
 
