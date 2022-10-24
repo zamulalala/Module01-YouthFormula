@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	/* font-family: 'Bebas Neue', cursive; */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	/* background-color: black; */
+	padding: 0 15px;
+}
+
+.btn {
+	background: linear-gradient(90deg, #E78496 0%, #DA3D5A 100%);
+	border: 1px solid rgba(254, 163, 180, 0.6);
+	box-shadow: 0px 20px 30px rgba(218, 61, 90, 0.5);
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 1.25em;
+	line-height: 120%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 2em 0.5em;
+	outline: none;
+}
+
+.section {
+	display: flow-root;
+}
+
+/* .intro */
+
+.section_intro {
+	background-color: #F3F0EC;
+	position: relative;
+	z-index: 1;
+	background-image: url(../img/fon.png);
+	overflow: hidden;
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: 1fr 1.1fr;
+	gap: 50px;
+}
+
+.intro__left {
+	display: flex;
+	flex-direction: column;
+	/* gap: 10px; */
+	padding-bottom: 93px;
+}
+
+.intro__right {
+	position: relative;
+	display: flex;
+}
+
+
+.intro__suptitle {
+	font-size: 1.375em;
+	/* 1.375em = 1.375 * font-size(16px) = 22px */
+	margin-top: 68px;
+	margin-bottom: 39px;
+}
+
+.intro__title {
+	font-family: 'Bebas Neue', cursive;
+	text-transform: uppercase;
+	font-size: 4.5em;
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: 35px;
+}
+
+.intro__subtitle {
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 140%;
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+
+.intro__description {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 140%;
+	max-width: 550px;
+	margin-top: 0;
+	margin-bottom: 28px;
+}
+
+.intro__card-wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 19px;
+	margin-bottom: 34px;
+}
+
+.intro__card {
+	max-width: 210px;
+}
+
+.intro__card-img {
+	margin-bottom: 14px;
+}
+
+.intro__card-text {
+	font-weight: 400;
+	font-size: 0.875em;
+	line-height: 130%;
+}
+
+.intro__card-vera {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(35%);
+}
+
+.intro__vera-img-wrapper {
+	display: flex;
+	align-items: flex-end;
+	margin-right: -100%;
+	/* margin-left: -25%; */
+}
+
+.section-intro-flower {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.section-intro-flower_01 {
+	top: 200px;
+	left: 0;
+}
+
+.section-intro-flower_02 {
+	right: 0;
+	width: 380px;
+	-webkit-filter: blur(8px);
+	        filter: blur(8px);
+	z-index: 1;
+	/* width: 20vw; */
+}
+
+.section-intro-ellipse {
+	position: absolute;
+	top: 0;
+	z-index: -2;
+	-webkit-animation: animEllipse 10s infinite;
+	        animation: animEllipse 10s infinite;
+}
+
+.section-intro-ellipse_01 {
+	max-width: 280px;
+	left: 15px;
+	top: 138px;
+	-webkit-animation-duration: 8s;
+	        animation-duration: 8s;
+}
+
+.section-intro-ellipse_02 {
+	max-width: 184px;
+	left: 66px;
+	top: 189px;
+	-webkit-animation-duration: 6s;
+	        animation-duration: 6s;
+}
+
+.section-intro-ellipse_03 {
+	max-width: 1100px;
+	right: 210px;
+	top: 110px;
+	-webkit-animation-duration: 7s;
+	        animation-duration: 7s;
+}
+
+.section-intro-ellipse_04 {
+	max-width: 600px;
+	right: 322px;
+	top: 220px;
+	-webkit-animation-duration: 11s;
+	        animation-duration: 11s;
+}
+
+
+/* .intro */
+
+
+/* .card-vera */
+
+.card-vera {
+	color: #85796E;
+	max-width: 275px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	background: rgba(255, 255, 255, 0.61);
+	border: 0.79703px solid rgba(255, 255, 255, 0.13);
+	-webkit-backdrop-filter: blur(11.9554px);
+	        backdrop-filter: blur(11.9554px);
+	border-radius: 8px;
+	padding: 1.5em 2em;
+}
+
+.card-vera__title {
+	font-size: 2.375em;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue';
+}
+
+.card-vera__subtitle {
+	font-weight: 700;
+	font-size: 0.875em;
+}
+
+.card-vera-description {
+	font-size: 0.875em;
+	line-height: 120%;
+}
+
+/* .card-vera */
+
+
+/* .courses */
+
+.section_courses {
+	padding-top: 50px;
+	/* margin-top: 50px; */
+}
+
+.courses {
+	margin-bottom: 130px;
+}
+
+/* .courses__info */
+
+.courses__info {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.courses__title {
+	font-family: 'Bebas Neue';
+	font-size: 4em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.courses__subtitle {
+	font-size: 1.125em;
+	line-height: 140%;
+	max-width: 750px;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+.courses__description {
+	font-size: 1.125em;
+	line-height: 140%;
+	margin: 0px;
+}
+
+/* .courses__info */
+
+/* .courses__card-courses-wrapper */
+
+.courses__card-courses-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 43px 27px;
+}
+
+
+.card-course {
+	background-color: #F5F1ED;
+	border-radius: 10px;
+	display: grid;
+	grid-template-rows: 175px auto;
+}
+
+.card-course__container {
+	padding: 20px 20px 30px;
+}
+
+.card-course__img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.card-course__number {
+	font-family: 'Bebas Neue';
+	font-size: 3.25em;
+	color: #ED5470;
+	margin-bottom: 25px;
+}
+
+.card-course__title {
+	font-family: 'Bebas Neue';
+	font-size: 2.0625em;
+	margin-bottom: 20px;
+	line-height: 100%;
+}
+
+.card-course__price {
+	font-family: 'Bebas Neue';
+	font-size: 2.25em;
+	line-height: 100%;
+	-webkit-text-decoration-line: line-through;
+	        text-decoration-line: line-through;
+	color: #939393;
+	margin-bottom: 24px;
+}
+
+.card-course__description {
+	font-size: 0.875em;
+	line-height: 140%;
+	margin-bottom: 25px;
+}
+
+.card-course__subtitle {
+	font-weight: 700;
+	font-size: 0.875em;
+	line-height: 140%;
+}
+
+/* .courses__card-courses-wrapper */
+
+/* .courses */
+
+
+/* .purchase */
+
+.purchase {
+    padding-bottom: 200px;
+}
+
+/* .purchase__info */
+
+.container_purchase {
+	max-width: 900px;
+}
+
+.purchase__info {
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.purchase__title {
+	font-family: 'Bebas Neue';
+	font-size: 4em;
+	margin: 0;
+	line-height: 1;
+}
+
+.purchase__title_pink {
+	color: #ED5470;
+}
+
+.purchase__subtitle {
+	text-transform: uppercase;
+	color: #927154;
+	font-size: 1.625em;
+	font-weight: 700;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.purchase__suptitle {
+	text-transform: uppercase;
+	font-size: 1.625em;
+	letter-spacing: 0.1em;
+	color: #AFAEAE;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+/* .purchase__info */
+
+/* .purchase__wrapper */
+
+.purchase__wrapper {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.purchase__installment {
+	margin-bottom: 15px;
+}
+
+.purchase__btn {
+	margin-top: 28px;
+	padding: 2em 4.3em;
+}
+
+/* .purchase__wrapper */
+
+/* .purchase */
+
+
+/* .installment */
+
+.installment {
+	background-color: #F8F8F8;
+	border-radius: 20px;
+	padding: 40px;
+}
+
+.installment__logo {
+	display: block;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+.installment__title {
+	font-family: 'Bebas Neue';
+	font-size: 2.5em;
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+
+.installment__subtitle {
+	font-weight: 500;
+	font-size: 1.125em;
+	line-height: 120%;
+	color: #747474;
+	margin: 0;
+}
+
+/* .installment */
+
+
+/* .form-contacts */
+
+.form-contacts {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-contacts__input {
+	background-color: #F8F8F8;
+	border-radius: 20px;
+	padding: 26px 52px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-weight: 500;
+	font-size: 1.125em;
+	color: #747474;
+	font-family: inherit;
+	text-align: center;
+}
+
+.form-contacts__input::-webkit-input-placeholder {
+	text-align: center;
+}
+
+.form-contacts__input::-moz-placeholder {
+	text-align: center;
+}
+
+.form-contacts__input:-ms-input-placeholder {
+	text-align: center;
+}
+
+.form-contacts__input::-ms-input-placeholder {
+	text-align: center;
+}
+
+.form-contacts__input::placeholder {
+	text-align: center;
+}
+
+/* .form-contacts */
+
+@media (max-width: 1600px) {
+	.section-intro-flower_02 {
+		width: 350px;
+		-webkit-filter: blur(8px);
+		        filter: blur(8px);
+	}
+}
+
+@media (max-width: 1400px) {
+	.section-intro-flower_02 {
+		width: 300px;
+		-webkit-filter: blur(5px);
+		        filter: blur(5px);
+	}
+
+	.intro__vera-img-wrapper {
+		margin-right: 0;
+	}
+
+	.intro__card-vera {
+		right: 0;
+		left: auto;
+		transform: none;
+	}
+
+	.section-intro-flower_01 {
+		display: none;
+	}
+}
+
+@media (max-width: 1250px) {
+	.section-intro-flower_02 {
+		width: 250px;
+		-webkit-filter: blur(5px);
+		        filter: blur(5px);
+	}
+}
+
+@media (max-width: 1100px) {
+	.intro {
+		font-size: 14px;
+	}
+
+	.intro__vera-img-wrapper {
+		width: 90%;
+	}
+
+	.card-vera {
+		font-size: 12px;
+	}
+
+	.intro__card-vera {
+		right: auto;
+		left: 35%;
+		bottom: 30px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.intro {
+		grid-template-columns: auto;
+		max-width: 500px;
+		margin: 0 auto;
+		font-size: 16px;
+	}
+
+	.intro__left {
+		padding: 0;
+	}
+
+	.intro__vera-img-wrapper {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.intro__card-vera {
+		left: 50%;
+	}
+
+	.section-intro-flower_02 {
+		bottom: 0;
+		transform: rotate(180deg) scaleX(-1);
+		top: auto;
+		z-index: -1;
+	}
+
+	.courses__card-courses-wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.card-vera {
+		font-size: inherit;
+	}
+}
+
+@media (max-width: 800px) {
+	.courses__card-courses-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card-course {
+		grid-template-rows: 250px auto;
+	}
+}
+
+@media (max-width: 550px) {
+	.intro,
+	.courses,
+	.purchase {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 500px) {
+	.courses__card-courses-wrapper {
+		grid-template-columns: auto;
+		font-size: 16px;
+	}
+
+	.card-vera {
+		font-size: 12px;
+	}
+
+	.intro__card-vera {
+		left: auto;
+		right: 0;
+	}
+}
+
+@-webkit-keyframes animEllipse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes animEllipse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
